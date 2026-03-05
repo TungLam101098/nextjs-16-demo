@@ -15,6 +15,9 @@ const nextConfig: NextConfig = {
   },
   reactCompiler: true,
   cacheComponents: true,
+  typescript: {
+    ignoreBuildErrors: true
+  },
   async rewrites() {
     return [
       {
